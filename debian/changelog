@@ -1,3 +1,21 @@
+gnome-online-accounts (3.8.0-1blankon1) suroboyo; urgency=low
+
+  * New upstream release
+
+ -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Thu, 28 Mar 2013 14:11:52 +0700
+
+gnome-online-accounts (3.8.0-1) experimental; urgency=low
+
+  [ Andreas Henriksson ]
+  * Install goawebview.css in libgoa-1.0-0 since it's used by libgoa-backend
+
+  [ Thomas Bechtold ]
+  * New upstream release.
+  * Updated symbols file.
+
+ -- Andreas Henriksson <andreas@fatal.se>  Wed, 27 Mar 2013 20:42:10 +0100
+
+
 gnome-online-accounts (3.7.91-1blankon1) suroboyo; urgency=low
 
   * New upstream release
