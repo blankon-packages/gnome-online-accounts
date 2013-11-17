@@ -1,22 +1,41 @@
-gnome-online-accounts (3.10.1-0blankon1) suroboyo; urgency=low
+gnome-online-accounts (3.10.0-2blankon1) suroboyo; urgency=low
 
   * New upstream release
 
- -- mijortsa <azis.astrojim@surabaya.di.blankon.in>  Tue, 15 Oct 2013 20:35:24 +0700
+ -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Sun, 17 Nov 2013 12:34:50 +0700
 
-gnome-online-accounts (3.10.0-0blankon1) suroboyo; urgency=medium
+gnome-online-accounts (3.10.0-2) experimental; urgency=low
 
+  * Drop debian version from breaks
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Sat, 02 Nov 2013 22:07:53 +0100
+
+gnome-online-accounts (3.10.0-1) experimental; urgency=low
+
+  * Sync changes from Ubuntu Gnome3 Staging PPA (3.10.0-0ubuntu1~saucy1)
+    - undocumented change included: fix Vcs-Svn url.
+
+  [ Rico Tzschichholz ]
+  * New upstream release
+
+  [ Tim Lunn ]
   * New upstream release
   * debian/control.in: Bump b-d on webkitgtk 2.1.90
   * debian/control.in: Add b-d on libdbus-glib-1-dev and libtelepathy-glib-dev
   * debian/gir1.2-goa-1.0.install: install typelib into correct location.
-  * debian/patches/revert_typelib_path_changes.patch: Dropped
-  * debian/patches: 
-    - drop git patches
-    - revert_typelib_path_changes.patch, upstream patch breaks installation
-      of typelib file on multiarch.
+  * debian/patches: drop
 
- -- Rahman Yusri Aftian <aftian@di.blankon.in>  Sun, 29 Sep 2013 17:47:10 +0700
+  [ Andreas Henriksson ]
+  * Bump glib build-dependency to >= 2.38 (uses G_ADD_PRIVATE)
+  * Split goa-backend into separate packages.
+  * Make libgoa-1.0-dev depend on libgoa-backend-1.0-dev
+    - simply to avoid causing build failures for existing packages
+  * Make libgoa-backend-1.0-dev c/replace older versions of libgoa-1.0-dev
+  * Rename libgoa-1.0-0 to libgoa-1.0-0b to avoid upgrade issues
+    - libgoa-1.0-0b breaks/replaces libgoa-1.0-0
+  * Install irc-networks.xml in libgoa-1.0-common
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Fri, 01 Nov 2013 23:12:47 +0100
 
 gnome-online-accounts (3.8.3-2) unstable; urgency=low
 
@@ -65,24 +84,11 @@ gnome-online-accounts (3.8.2-1) unstable; urgency=low
 
  -- Michael Biebl <biebl@debian.org>  Fri, 24 May 2013 17:59:18 +0200
 
-gnome-online-accounts (3.8.1-1blankon1) suroboyo; urgency=low
-
-  * New upstream release
-  * Merge whit debian
-
- -- Rahman Yusri Aftian <aftian@di.blankon.in>  Sun, 05 May 2013 15:19:56 +0700
-
 gnome-online-accounts (3.8.1-1) experimental; urgency=low
 
   * New upstream release.
 
  -- Thomas Bechtold <thomasbechtold@jpberlin.de>  Thu, 25 Apr 2013 16:58:36 +0200
-
-gnome-online-accounts (3.8.0-1blankon1) suroboyo; urgency=low
-
-  * New upstream release
-
- -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Thu, 28 Mar 2013 14:11:52 +0700
 
 gnome-online-accounts (3.8.0-1) experimental; urgency=low
 
@@ -94,13 +100,6 @@ gnome-online-accounts (3.8.0-1) experimental; urgency=low
   * Updated symbols file.
 
  -- Andreas Henriksson <andreas@fatal.se>  Wed, 27 Mar 2013 20:42:10 +0100
-
-
-gnome-online-accounts (3.7.91-1blankon1) suroboyo; urgency=low
-
-  * New upstream release
-
- -- Mahyuddin <dotovr@di.blankon.in>  Thu, 14 Mar 2013 20:43:25 +0700
 
 gnome-online-accounts (3.7.91-1) experimental; urgency=low
 
@@ -150,6 +149,13 @@ gnome-online-accounts (3.6.0-1) experimental; urgency=low
     Removed, Fixed upstream
 
  -- Sjoerd Simons <sjoerd@debian.org>  Sun, 07 Oct 2012 09:24:51 +0200
+
+gnome-online-accounts (3.4.2-2) unstable; urgency=medium
+
+  * Team upload.
+  * CVE-2013-0240: check TLS certificates for web services (Closes: #699825)
+
+ -- Simon McVittie <smcv@debian.org>  Tue, 05 Feb 2013 15:51:24 +0000
 
 gnome-online-accounts (3.4.2-1) unstable; urgency=low
 
