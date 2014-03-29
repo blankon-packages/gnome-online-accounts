@@ -47,7 +47,7 @@ Section: libs
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          libgoa-1.0-common (= ${source:Version})
-#Conflicts: libgoa-1.0-0
+Conflicts: libgoa-1.0-0
 Replaces: libgoa-1.0-0
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
@@ -116,8 +116,8 @@ Package: libgoa-1.0-common
 Architecture: all
 Section: libs
 Depends: ${misc:Depends}
-Breaks: libgoa-1.0-0 (<< 3.10.2)
-Replaces: libgoa-1.0-0 (<< 3.10.2)
+Breaks: libgoa-1.0-0 (<< 3.8.2)
+Replaces: libgoa-1.0-0 (<< 3.8.2)
 Multi-Arch: foreign
 Description: library for GNOME Online Accounts - common files
  This package contains the GNOME Online Accounts service, which provides a
