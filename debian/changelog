@@ -1,8 +1,64 @@
-gnome-online-accounts (3.14.0-1blankon1) tambora; urgency=low
+gnome-online-accounts (3.16.0-0blankon1) tambora; urgency=medium
+
+  * New upstream release
+  * Import from PPA GNOME3-TEAM
+
+ -- Mahyuddin <yudi.al@gmail.com>  Sun, 31 May 2015 16:36:07 +0700
+
+gnome-online-accounts (3.16.0-0ubuntu1~vivid1) vivid; urgency=medium
 
   * New upstream release
 
- -- Syai Mif <syai.unipdu@gmail.com>  Sat, 27 Sep 2014 05:44:15 +0700
+ -- Tim Lunn <tim@feathertop.org>  Wed, 25 Mar 2015 09:24:24 +1100
+
+gnome-online-accounts (3.15.91-0ubuntu1~vivid2) vivid; urgency=medium
+
+  * New upstream release
+  * Bump build-deps on libsoup and webkit2gtk
+  * libgoa-1.0-common don't install css files
+  * debian/libgoa-backend-1.0-1.symbols: drop removed symbol
+
+ -- Tim Lunn <tim@feathertop.org>  Mon, 09 Mar 2015 13:03:37 +1100
+
+gnome-online-accounts (3.15.4-0ubuntu1~vivid1) vivid; urgency=medium
+
+  * New upstream release
+  * debian/libgoa-1.0-0b.symbols: Add new symbols
+
+ -- Tim Lunn <tim@feathertop.org>  Sun, 25 Jan 2015 16:15:40 +1100
+
+gnome-online-accounts (3.14.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+  * debian/rules: Disable yahoo provider, it is experimental, broken and
+    nothing is using it anyway (Closes: #764816)
+  * debian/control.in: Use the canonical URL for the Vcs-Svn field
+
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 04 Dec 2014 22:51:04 +0100
+
+gnome-online-accounts (3.14.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control.in:
+    - Bump Standards-Version to 3.9.6 (no further changes)
+    - Fix the short description to please lintian
+    - Update Homepage URL
+    - Recommends dleyna-server on linux architectures, it can be used to add
+      Media servers and mine their content
+
+ -- Laurent Bigonville <bigon@debian.org>  Mon, 20 Oct 2014 00:29:37 +0200
+
+gnome-online-accounts (3.14.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Henriksson <andreas@fatal.se>  Tue, 23 Sep 2014 18:37:03 +0200
+
+gnome-online-accounts (3.13.92-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Sat, 20 Sep 2014 10:31:59 +0200
 
 gnome-online-accounts (3.13.91-1) experimental; urgency=medium
 
@@ -21,35 +77,33 @@ gnome-online-accounts (3.13.91-1) experimental; urgency=medium
 
  -- Andreas Henriksson <andreas@fatal.se>  Sat, 06 Sep 2014 04:12:57 -0700
 
-gnome-online-accounts (3.12.0-1blankon5) tambora; urgency=low
+gnome-online-accounts (3.12.4-1) unstable; urgency=medium
 
-  * Rebuild
+  * Team upload.
 
- -- Mahyuddin Ramli <yudi.al@gmail.com>  Sat, 29 Mar 2014 23:57:52 +0700
+  [ Jackson Doak ]
+  * New upstream release
 
-gnome-online-accounts (3.12.0-1blankon4) tambora; urgency=low
+ -- Andreas Henriksson <andreas@fatal.se>  Thu, 31 Jul 2014 20:54:38 +0200
 
-  * Rebuild
+gnome-online-accounts (3.12.2-1) unstable; urgency=medium
 
- -- Mahyuddin Ramli <yudi.al@gmail.com>  Sat, 29 Mar 2014 23:35:54 +0700
+  [ Laurent Bigonville ]
+  * debian/control.in: Recommends realmd package (Closes: #725965)
 
-gnome-online-accounts (3.12.0-1blankon3) tambora; urgency=low
+  [ Andreas Henriksson ]
+  * New upstream release.
+    - Removes chat support from Windows Live provider (XMPP gateway gone).
+  * Bump Standards-Version to 3.9.5
 
-  * Disable Conflicts libgoa-1.0-0
+ -- Andreas Henriksson <andreas@fatal.se>  Fri, 16 May 2014 11:42:52 +0200
 
- -- Mahyuddin Ramli <yudi.al@gmail.com>  Sat, 29 Mar 2014 17:54:14 +0700
-
-gnome-online-accounts (3.12.0-1blankon2) tambora; urgency=low
-
-  * Rebuild
-
- -- Mahyuddin Ramli <yudi.al@gmail.com>  Fri, 28 Mar 2014 22:26:00 +0700
-
-gnome-online-accounts (3.12.0-1blankon1) tambora; urgency=low
+gnome-online-accounts (3.12.1-1) unstable; urgency=medium
 
   * New upstream release.
+  * Upload to unstable.
 
- -- Aris Febrianto <ariesfebrianto@gmail.com>  Thu, 27 Mar 2014 03:32:43 +0700
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 26 Apr 2014 11:30:35 +0200
 
 gnome-online-accounts (3.12.0-1) experimental; urgency=medium
 
@@ -59,12 +113,6 @@ gnome-online-accounts (3.12.0-1) experimental; urgency=medium
       development release in debian experimental. No known users anywhere.
 
  -- Andreas Henriksson <andreas@fatal.se>  Tue, 25 Mar 2014 21:38:44 +0100
-
-gnome-online-accounts (3.11.90-1blankon1) tambora; urgency=low
-
-  * New Upstream Release 
-
- -- Rahman Yusri Aftian <aftian@di.blankon.in>  Mon, 24 Mar 2014 07:28:15 +0700
 
 gnome-online-accounts (3.11.90-1) experimental; urgency=medium
 
@@ -79,12 +127,6 @@ gnome-online-accounts (3.11.90-1) experimental; urgency=medium
     symbols mismatch (by adding -c4).
 
  -- Andreas Henriksson <andreas@fatal.se>  Tue, 18 Feb 2014 21:42:07 +0100
-
-gnome-online-accounts (3.10.2-1blankon1) suroboyo; urgency=medium
-
-  * New upstream release
-
- -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Sat, 11 Jan 2014 15:55:23 +0700
 
 gnome-online-accounts (3.10.2-1) experimental; urgency=medium
 
