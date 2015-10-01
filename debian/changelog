@@ -1,31 +1,44 @@
-gnome-online-accounts (3.16.0-0blankon1) tambora; urgency=medium
+gnome-online-accounts (3.18.0-0blankon1) tambora; urgency=medium
 
-  * New upstream release
-  * Import from PPA GNOME3-TEAM
+  * New upstream release 
 
- -- Mahyuddin <yudi.al@gmail.com>  Sun, 31 May 2015 16:36:07 +0700
+ -- mhy <dotovr@mhy>  Thu, 01 Oct 2015 21:19:08 +0700
 
-gnome-online-accounts (3.16.0-0ubuntu1~vivid1) vivid; urgency=medium
+gnome-online-accounts (3.17.92-1) experimental; urgency=medium
 
-  * New upstream release
+  * New upstream release candidate.
+  * Update debian/libgoa-1.0-0b.symbols with new additions.
+  * Update debian/libgoa-backend-1.0-1.symbols with one new addition.
+  * Ship new goa-identity-service files in gnome-online-accounts pkg.
 
- -- Tim Lunn <tim@feathertop.org>  Wed, 25 Mar 2015 09:24:24 +1100
+ -- Andreas Henriksson <andreas@fatal.se>  Wed, 16 Sep 2015 17:33:06 +0200
 
-gnome-online-accounts (3.15.91-0ubuntu1~vivid2) vivid; urgency=medium
+gnome-online-accounts (3.16.4-1) unstable; urgency=medium
 
-  * New upstream release
-  * Bump build-deps on libsoup and webkit2gtk
-  * libgoa-1.0-common don't install css files
-  * debian/libgoa-backend-1.0-1.symbols: drop removed symbol
+  * New upstream release.
 
- -- Tim Lunn <tim@feathertop.org>  Mon, 09 Mar 2015 13:03:37 +1100
+ -- Michael Biebl <biebl@debian.org>  Tue, 15 Sep 2015 23:21:16 +0200
 
-gnome-online-accounts (3.15.4-0ubuntu1~vivid1) vivid; urgency=medium
+gnome-online-accounts (3.16.3-1) unstable; urgency=medium
 
-  * New upstream release
-  * debian/libgoa-1.0-0b.symbols: Add new symbols
+  * New upstream release.
+  * Add Upstream-Name and Upstream-Contact to debian/copyright.
 
- -- Tim Lunn <tim@feathertop.org>  Sun, 25 Jan 2015 16:15:40 +1100
+ -- Michael Biebl <biebl@debian.org>  Mon, 15 Jun 2015 20:31:35 +0200
+
+gnome-online-accounts (3.16.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update Build-Depends, switch to Webkit2.
+  * Enable Foursquare provider.
+  * Install typelib files into multiarch paths.
+  * Mark gir and dev packages as Multi-Arch: same.
+  * Bump debhelper compatibility level to 9.
+  * Install new web-extension component.
+  * Update symbols files. Due to the removal of the Yahoo provider, the
+    goa_yahoo_provider_get_type symbol was dropped from libgoa-backend-1.0-1.
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 02 Jun 2015 07:01:35 +0200
 
 gnome-online-accounts (3.14.2-1) unstable; urgency=medium
 
